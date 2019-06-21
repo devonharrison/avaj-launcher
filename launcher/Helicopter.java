@@ -1,3 +1,5 @@
+package launcher;
+
 class Helicopter{
     private WeatherTower weatherTower;
     public Helicopter(String name, Coordinates coordinates){

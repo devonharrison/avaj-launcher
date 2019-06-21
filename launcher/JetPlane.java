@@ -1,3 +1,5 @@
+package launcher;
+
 class JetPlane{
     private WeatherTower weatherTower;
     JetPlane(String name, Coordinates coordinates){

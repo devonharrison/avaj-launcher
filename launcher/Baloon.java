@@ -1,3 +1,6 @@
+package launcher;
+import launcher.WeatherTower;
+
 class Baloon{
     private WeatherTower weatherTower;
     Baloon(String name, Coordinates coordinates){

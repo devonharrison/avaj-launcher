@@ -1,17 +1,24 @@
-class Cooridinates{
+package launcher;
+
+class Coordinates{
     private int longitude;
     private int latitude;
     private int height;
-    Cooridinates(int longitude, int latitude, int height){
+    public Coordinates(){
+        longitude = 0;
+        latitude = 0;
+        height = 0;
+    }
+    Coordinates(int longitude, int latitude, int height){
 
     }
-    public getLongitude(){
+    public int getLongitude(){
         return(this.longitude);
     }
-    public getLatitude(){
+    public int getLatitude(){
         return(this.latitude);
     }
-    public getHeight(){
+    public int getHeight(){
         return(this.height);
     }
 }
