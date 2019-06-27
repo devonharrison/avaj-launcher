@@ -1,17 +1,17 @@
-package launcher;
-import launcher.Coordinates;
+package weather;
+import weather.Coordinates;
 
 class WeatherProvider{
-    private WeatherProvider weatherProvider;
+    private WeatherProvider weatherProvider = new WeatherProvider();
     private String[] weather;
     private WeatherProvider(){
-        this.weather[0] = "RAIN";
-        this.weather[1] = "FOG";
-        this.weather[2] = "SUN";
-        this.weather[3] = "SNOW";
+        weatherProvider.weather[0] = "RAIN";
+        weatherProvider.weather[1] = "FOG";
+        weatherProvider.weather[2] = "SUN";
+        weatherProvider.weather[3] = "SNOW";
     }
     public WeatherProvider getProvider(){
-        return(this); 
+        return(weatherProvider); 
     }
     public String getCurrentWeather(Coordinates coodinates){
         int height = coodinates.getHeight();

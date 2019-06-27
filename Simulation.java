@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import launcher.Aircraft;
+import aircrafts.Aircraft;
 
 public class Simulation{
     public static void main(String [] args){

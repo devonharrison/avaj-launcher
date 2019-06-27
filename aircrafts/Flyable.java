@@ -1,5 +1,5 @@
-package launcher;
-import launcher.WeatherTower;
+package aircrafts;
+import weather.WeatherTower;
 
 interface Flyable{
     public void updateConditions();

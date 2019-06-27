@@ -1,8 +1,10 @@
-package launcher;
+package aircrafts;
+import weather.WeatherTower;
+import weather.Coordinates;
 
-class JetPlane{
+class Baloon{
     private WeatherTower weatherTower;
-    JetPlane(String name, Coordinates coordinates){
+    Baloon(String name, Coordinates coordinates){
 
     }
     public void updateConditions(){

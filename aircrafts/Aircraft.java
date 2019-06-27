@@ -1,5 +1,5 @@
-package launcher;
-import launcher.Coordinates;
+package aircrafts;
+import weather.Coordinates;
 
 public class Aircraft{
     protected long id;

@@ -1,7 +1,7 @@
-package launcher;
-import launcher.Coordinates;
+package weather;
+import weather.Coordinates;
 
-class WeatherTower{
+public class WeatherTower{
     public String getWeather(Coordinates cooridinates){
         return("filler");
     }

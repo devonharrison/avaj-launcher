@@ -1,4 +1,4 @@
-package launcher;
+package weather;
 import java.util.ArrayList;
 
 class Tower{
