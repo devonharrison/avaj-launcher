@@ -1,8 +1,9 @@
 package weather;
 import java.util.ArrayList;
+import aircrafts.Flyable;
 
 class Tower{
-    private Arraylist<Flyable> observers = new ArrayList<Flyable>();
+    private ArrayList<Flyable> observers = new ArrayList<Flyable>();
     public void register(Flyable flyable){
 
     }

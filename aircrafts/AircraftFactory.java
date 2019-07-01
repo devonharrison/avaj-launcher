@@ -2,8 +2,8 @@ package aircrafts;
 import aircrafts.Flyable;
 import weather.WeatherTower;
 
-class AircraftFactory{
-    public Flyable newAircraft(String type, String name, int longitude, int latitude, int height){
+public class AircraftFactory{
+    public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height){
         Flyable fly = new Flyable(){
             public void updateConditions() {
                 
