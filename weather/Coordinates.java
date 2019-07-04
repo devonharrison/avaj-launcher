@@ -4,12 +4,12 @@ package weather;
     private int longitude;
     private int latitude;
     private int height;
-    public Coordinates(){
+    private Coordinates(){
         longitude = 0;
         latitude = 0;
         height = 0;
     }
-    Coordinates(int longitude, int latitude, int height){
+    private Coordinates(int longitude, int latitude, int height){
         this.longitude = longitude;
         this.latitude = latitude;
         this.height = height;

@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 import weather.Coordinates;
+import weather.WeatherProvider;
 import weather.WeatherTower;
 import aircrafts.AircraftFactory;
 import aircrafts.Flyable;
@@ -33,6 +34,7 @@ public class Simulation{
                                 Integer.parseInt(line.split(" ")[4]));
                             flyables.add(flyable);
                         }
+
                         for(Flyable flyable : flyables){
                             flyable.registerTower(weatherTower);
                         }
@@ -41,26 +43,9 @@ public class Simulation{
                         }
                     }
                     WeatherTower a = new WeatherTower();
-                    Coordinates coordinates = new Coordinates();
-                    System.out.println(a.getWeather(coordinates));
+                    Coordinates c = new Coordinates();
+                    System.out.println(a.getWeather(c));
                     buf.close();
-                    // String fileName = args[0];
-                    // InputStream is = new FileInputStream(fileName);
-                    // BufferedReader buf = new BufferedReader(new InputStreamReader(is));
-                    // String line = buf.readLine();
-                    // StringBuilder sb = new StringBuilder();
-                    // while(line != null){
-                    //     sb.append(line).append("\n");
-                    //     line = buf.readLine();
-                    // } 
-                    // String fileAsString = sb.toString();
-                    // String [] fileInArr = fileAsString.split("\n");
-                    // int len = fileInArr.length;
-                    // int i = 0;
-                    // while (i < len){
-                    //     String [] tmp = fileInArr[i].split(" ");
-                    // }
-                    // is.close();
                 } catch (Exception e){
                     System.out.println("Error reading file");
                 } 
