@@ -2,8 +2,9 @@ package weather;
 import weather.Coordinates;
 import weather.WeatherProvider;
 import java.util.Random;
+import weather.Tower;
 
-public class WeatherTower{
+public class WeatherTower extends Tower{
     public String getWeather(Coordinates coordinates){
         int height = coordinates.getHeight();
         int lati = coordinates.getLatitude();

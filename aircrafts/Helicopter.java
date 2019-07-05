@@ -9,7 +9,7 @@ class Helicopter extends Aircraft{
         Aircraft helicopter = new Aircraft(name, coordinates);
     }
     public void updateConditions(){
-
+        
     }
     public void registerTower(WeatherTower weatherTower){
         
