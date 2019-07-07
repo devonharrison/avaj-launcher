@@ -2,11 +2,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
-import weather.Coordinates;
-import weather.WeatherProvider;
-import weather.WeatherTower;
-import aircrafts.AircraftFactory;
-import aircrafts.Flyable;
+import weather.*;
+import aircrafts.*;
 
 public class Simulation{
     private static WeatherTower weatherTower;
@@ -33,18 +30,12 @@ public class Simulation{
                                 Integer.parseInt(line.split(" ")[3]),
                                 Integer.parseInt(line.split(" ")[4]));
                             flyables.add(flyable);
-                        }
-
-                        for(Flyable flyable : flyables){
                             flyable.registerTower(weatherTower);
                         }
-                        for (int i = 1; i <= sim; i++){
+                        for (int i = 0; i < sim; i++){
                             weatherTower.changeWeather();
                         }
                     }
-                    WeatherTower a = new WeatherTower();
-                    Coordinates c = new Coordinates();
-                    System.out.println(a.getWeather(c));
                     buf.close();
                 } catch (Exception e){
                     System.out.println("Error reading file");
