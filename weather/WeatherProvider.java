@@ -3,20 +3,19 @@ import weather.Coordinates;
 import weather.Tower;
 
 public class WeatherProvider{
-    private WeatherProvider weatherProvider = new WeatherProvider();
-    private String[] weather;
+    private static WeatherProvider weatherProvider = new WeatherProvider();
+    private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
     WeatherProvider(){
-        weatherProvider.weather[0] = "RAIN";
-        weatherProvider.weather[1] = "FOG";
-        weatherProvider.weather[2] = "SUN";
-        weatherProvider.weather[3] = "SNOW";
+
     }
     public WeatherProvider getProvider(){
         return(weatherProvider); 
     }
     public String getCurrentWeather(Coordinates coordinates){
-        WeatherTower tower = new WeatherTower();
-        String currentWeather = tower.getWeather(coordinates);
-        return (currentWeather);
+        int longi = coordinates.getLongitude();
+        int lati = coordinates.getLatitude();
+        int height = coordinates.getHeight();
+        int index = (longi + lati + height) % 4;
+        return (weather[index]);
     } 
 }
