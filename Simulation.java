@@ -1,9 +1,5 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.net.http.HttpResponse.BodyHandler;
-import java.nio.Buffer;
-import java.util.ArrayList;
-import java.util.List;
 import weather.*;
 import aircrafts.*;
 
@@ -39,9 +35,14 @@ public class Simulation{
                             Flyable flyable = new AircraftFactory().newAircraft(type, name, longi, lati, height);
                             flyable.registerTower(weatherTower);
                         }
-                        for (int i = 0; i < sim; i++){
-                            weatherTower.changeWeather();
+                        try{
+                            for (int i = 0; i < sim; i++){
+                                weatherTower.changeWeather();
+                            }
+                        }catch(Exception e){
+                            System.out.println("Error here fam");
                         }
+
                     } catch (Exception e){
                         System.out.println("Error registering aircrafts");
                     }
