@@ -6,27 +6,10 @@ import weather.Tower;
 
 public class WeatherTower extends Tower{
     public String getWeather(Coordinates coordinates){
-        int height = coordinates.getHeight();
-        int lati = coordinates.getLatitude();
-        int longi = coordinates.getLongitude();
-        String [] weath = new String[4];
-        weath[0] = "RAIN";
-        weath[1] = "FOG";
-        weath[2] = "SUN";
-        weath[3] = "SNOW";
-        String ret;
-        int index = 0;
-        if ((height >=  0 && height <= 100) && lati >= 0 && longi >= 0){
-            index = (height + longi + lati) % 4;
-            ret = weath[index];
-        }
-        else{
-            ret = "Invalid coordinates";
-            System.out.println(ret);
-        }
-        return (ret);
+        WeatherProvider weather = new WeatherProvider();
+        return (weather.getCurrentWeather(coordinates));
     }
     public void changeWeather(){
-
+        this.conditionsChanged();
     }
 }
