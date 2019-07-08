@@ -3,7 +3,7 @@ import aircrafts.Flyable;
 import weather.Coordinates;
 import weather.WeatherTower;
 import aircrafts.Baloon;
-import avajexception.CustomException;
+import avajutils.CustomException;
 
 public class AircraftFactory{
     public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) throws CustomException{

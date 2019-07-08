@@ -1,0 +1,82 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1): Some condensation for the soul
+Baloon#B2(2): It's cold, freezing in fact
+Jetplane#J1(3): the snow means go low
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): it looks like...nevermind, I can't see
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): it's getting quite toasty up here
+Helicopter#H4(9): spinning water
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): Wish we had some wipers, but again, no point
+Jetplane#J1(3): it's poring, I'm sure some old men are snoring
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): blades of fire
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): it's poring, I'm sure some old men are snoring
+Helicopter#H4(9): it looks like...nevermind, I can't see
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): It's cold, freezing in fact
+Jetplane#J1(3): the fog doesn't affect you if you're blind
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): it looks like...nevermind, I can't see
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): the fog doesn't affect you if you're blind
+Helicopter#H4(9): blades of fire
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): Wish we had some wipers, but again, no point
+Jetplane#J1(3): it's getting quite toasty up here
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): blades of fire
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): it's getting quite toasty up here
+Helicopter#H4(9): blades of fire
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): It's cold, freezing in fact
+Jetplane#J1(3): it's getting quite toasty up here
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): spinning water
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): it's poring, I'm sure some old men are snoring
+Helicopter#H4(9): blades of fire
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): Wish we had some wipers, but again, no point
+Jetplane#J1(3): it's getting quite toasty up here
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): it looks like...nevermind, I can't see
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): the fog doesn't affect you if you're blind
+Helicopter#H4(9): blades of fire
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): It's cold, freezing in fact
+Jetplane#J1(3): it's getting quite toasty up here
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): blades of fire
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): it's getting quite toasty up here
+Helicopter#H4(9): blades of fire
+Baloon#B1(1): I would like AC, but there's no point
+Baloon#B2(2): Wish we had some wipers, but again, no point
+Jetplane#J1(3): it's getting quite toasty up here
+Helicopter#H1(4): there's a snowman on board
+Helicopter#H2(5): there's a snowman on board
+Helicopter#H3(6): spinning water
+Baloon#B3(7): I would like AC, but there's no point
+Jetplane#J2(8): it's poring, I'm sure some old men are snoring
+Helicopter#H4(9): blades of fire
+Baloon#B1(1): I would like AC, but there's no point

@@ -1,11 +1,14 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.File;
 import weather.*;
 import aircrafts.*;
+import avajutils.AvajFileWriter;
+import java.io.FileWriter;
 
 public class Simulation{
-    static WeatherTower weatherTower = new WeatherTower();
     public static void main(String [] args){
+        WeatherTower weatherTower = new WeatherTower();
             int argc = args.length;
             if (argc == 0){
                 System.out.println("Please give me a scenario");
@@ -26,6 +29,8 @@ public class Simulation{
                         }
                     }
                     try{
+                        File file = new File("simulation.txt");
+                        FileWriter fw = new FileWriter(file);
                         while ((line = buf.readLine()) != null){
                             String type = line.split(" ")[0].toLowerCase();
                             String name = line.split(" ")[1];
@@ -35,18 +40,21 @@ public class Simulation{
                             Flyable flyable = new AircraftFactory().newAircraft(type, name, longi, lati, height);
                             flyable.registerTower(weatherTower);
                         }
-                        try{
+                        try {
                             for (int i = 0; i < sim; i++){
                                 weatherTower.changeWeather();
+                                //FIX THIS
+                                System.out.println(i);
                             }
-                        }catch(Exception e){
-                            System.out.println("Error here fam");
+                        } catch(Exception e){
+                            System.out.print(e);
                         }
-
+                        buf.close();
+                        AvajFileWriter.OutputWriter(fw);
+                        fw.close();
                     } catch (Exception e){
                         System.out.println("Error registering aircrafts");
                     }
-                    buf.close();
                 } catch(Exception e){
                     System.out.println("Error reading file");
                 }

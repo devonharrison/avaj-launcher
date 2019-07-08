@@ -2,7 +2,7 @@ package weather;
 import java.util.ArrayList;
 import aircrafts.Flyable;
 
-class Tower{
+public class Tower{
     private ArrayList<Flyable> observers = new ArrayList<Flyable>();
     public void register(Flyable flyable){
         if (observers.contains(flyable)){
@@ -23,6 +23,7 @@ class Tower{
     protected void conditionsChanged(){
         for(int i = 0; i < observers.size(); i++){
             observers.get(i).updateConditions();
-        } 
+        }
+        
     }
 }

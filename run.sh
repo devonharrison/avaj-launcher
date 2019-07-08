@@ -4,5 +4,5 @@ javac Simulation.java
 java Simulation scenario.txt
 rm aircrafts/*.class
 rm weather/*.class
-rm avajexception/*.class
+rm avajutils/*.class
 rm Simulation.class
