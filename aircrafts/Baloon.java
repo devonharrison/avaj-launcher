@@ -36,6 +36,8 @@ public class Baloon extends Aircraft implements Flyable{
         }
         if (this.coordinates.getHeight() == 0){
             unregisterTower(weatherTower);
+            AvajFileWriter.addToArr("Tower says: Baloon#" + this.name + "(" + this.id + ") " + "Longitude: " + coordinates.getLongitude()
+            + "\nLatitude: " + coordinates.getLatitude() + "\nHeight: " + coordinates.getHeight());
         }
     }
     public void registerTower(WeatherTower weatherTower){
