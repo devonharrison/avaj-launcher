@@ -1,6 +1,7 @@
 #!/bin/bash
 
-javac Simulation.java
+find * -name "*.java" > sources.txt
+javac @sources.txt
 java Simulation scenario.txt
 rm aircrafts/*.class
 rm weather/*.class

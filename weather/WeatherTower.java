@@ -1,7 +1,6 @@
 package weather;
 import weather.Coordinates;
 import weather.WeatherProvider;
-import java.util.Random;
 import weather.Tower;
 
 public class WeatherTower extends Tower{

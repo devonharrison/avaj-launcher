@@ -1,6 +1,7 @@
 package weather;
+
+import java.util.Random;
 import weather.Coordinates;
-import weather.Tower;
 
 public class WeatherProvider{
     private static WeatherProvider weatherProvider = new WeatherProvider();
@@ -15,7 +16,8 @@ public class WeatherProvider{
         int longi = coordinates.getLongitude();
         int lati = coordinates.getLatitude();
         int height = coordinates.getHeight();
-        int index = (longi + lati + height) % 4;
+        Random rand = new Random();
+        int index = ((longi + lati + height) + rand.nextInt(50)) % 4;
         return (weather[index]);
     } 
 }

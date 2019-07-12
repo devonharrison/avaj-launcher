@@ -34,7 +34,7 @@ class JetPlane extends Aircraft implements Flyable{
                 AvajFileWriter.addToArr("Jetplane#" + this.name + "(" + this.id + "): " + "the snow means go low");
                 break ;
         }
-        if (this.coordinates.getHeight() == 0){
+        if (this.coordinates.getHeight() <= 0){
             unregisterTower(weatherTower);
         }
     }
